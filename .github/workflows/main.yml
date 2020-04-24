@@ -3,11 +3,11 @@
 # 工作流程的名字
 name: Test, Build and Release apk
 
-# 工作流程触发的时机，这里是当一个版本标签推送到仓库时触发
+# 工作流程触发的时机
 on:
   push:
-    tags:
-      - v*
+    branches:
+      - master # Change this to your default branch
 
 # 这个工作流程需要执行的任务
 jobs:
